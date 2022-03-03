@@ -132,7 +132,7 @@ const FormContainer = () => {
                             <section id={styles.lightbox}>
                                 <div className={styles.lContent}>
                                     <p className={styles.lTitle}>Envio Exitoso</p>
-                                    <p className={styles.lSubtitle} >Sus datos se enviaron correctamente</p>
+                                    <p className={styles.lSubtitle} >Tu información fue enviada con éxito, estaremos en contacto contigo</p>
                                 </div>
                             </section>
                         :
