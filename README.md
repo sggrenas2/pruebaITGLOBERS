@@ -2,6 +2,8 @@
 
 Este proyecto fue creado con [Create React App](https://github.com/facebook/create-react-app).
 
+Antes que nada instalar las dependencias ejecutando "yarn" en el directorio raiz
+
 ademas de eso usa typescript para controlar el typing; 
 
 dentro de la carpeta Typing hay algunas interfaces necesarias para los componentes como son: 
