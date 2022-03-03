@@ -1,0 +1,102 @@
+@import './_variables.scss';
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    padding-right: 0.5rem;
+}
+
+.title{
+    font-size: 2rem;
+}
+
+.subTitle{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+form{
+    width: 60%;
+    margin-top: 1rem;
+    @media screen and (max-width: $max-mobile) {
+        width: 90%;
+    }
+
+    .submitButton{
+        display: block;
+        width: min-content;
+        height: min-content;
+        padding: 1rem 2rem;
+        margin: 1rem auto;
+        border-radius: 0.8rem;
+        border: 1px solid $header;
+        background: $headerGradient;
+        font-size: 1.2rem;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        &:hover{
+            filter: drop-shadow(2px 4px 6px black);
+        }
+    }
+}
+
+#lightbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    background: rgba( 0, 0, 0, 0.8);
+
+    .lContent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-width: 50%;
+        min-height: auto;
+        background-color: white;
+        padding: 2rem 0;
+
+        @media screen and (max-width: $max-mobile-s) {
+            min-width: 80%;
+            min-height: auto;
+        }
+
+        .lTitle{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .lSubtitle{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+#formError{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid $error-color;
+    max-width: max-content;
+    margin: 1rem auto 0 auto;
+    .formErrorMessage{
+        font-size: 1.2rem;
+        color: $error-color;
+        text-align: center;
+        font-weight: bold;
+    }
+}
